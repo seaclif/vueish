@@ -1,6 +1,5 @@
 /*!
- * Vue.js v2.6.14
- * (c) 2014-2021 Evan You
+ * Vueish.js v0.0.2
  * Released under the MIT License.
  */
 (function (global, factory) {
