@@ -1,5 +1,5 @@
 /*!
- * Vueish.js v0.0.2
+ * Vueish.js v0.0.3
  * Released under the MIT License.
  */
 (function (global, factory) {

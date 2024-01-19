@@ -1,15 +1,14 @@
 package vueish
 
 import (
-	_ "embed"
-	"fmt"
+	"embed"
 	"net/http"
 )
 
 //go:embed vueish.js
-var Vueish string
+var Vueish embed.FS
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	w.Header().Add("Content-Type", "application/javascript")
-	fmt.Fprintf(w, Vueish)
+	r.URL.Path = "/vueish.js"
+	http.FileServer(http.FS(Vueish)).ServeHTTP(w, r)
 }
