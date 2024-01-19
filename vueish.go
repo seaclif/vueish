@@ -1,1 +1,4 @@
 package vueish
+
+func Hello() {
+}
